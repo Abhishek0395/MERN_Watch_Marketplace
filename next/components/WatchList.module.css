@@ -1,0 +1,16 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.25rem;
+}
+
+.stateText {
+  color: var(--slate);
+  font-size: 0.9rem;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.stateText[data-tone="error"] {
+  color: var(--bad);
+}

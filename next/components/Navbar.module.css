@@ -1,0 +1,56 @@
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 2rem;
+  border-bottom: 1px solid var(--hairline);
+  background: var(--ink-900);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.brandName {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.portalLink {
+  font-size: 0.85rem;
+  color: var(--brass-bright);
+  text-decoration: none;
+}
+
+.portalLink:hover {
+  text-decoration: underline;
+}
+
+.greeting {
+  font-size: 0.85rem;
+  color: var(--cream-dim);
+}
+
+.logoutBtn {
+  background: transparent;
+  border: 1px solid var(--hairline);
+  color: var(--cream);
+  padding: 0.45rem 0.9rem;
+  border-radius: 4px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.logoutBtn:hover {
+  border-color: var(--brass);
+}

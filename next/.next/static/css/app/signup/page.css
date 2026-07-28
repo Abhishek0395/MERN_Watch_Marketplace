@@ -1,0 +1,179 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/AuthForm.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.AuthForm_panel___jMZF {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 860px) {
+  .AuthForm_panel___jMZF {
+    grid-template-columns: 1fr;
+  }
+}
+
+.AuthForm_brandSide__msiof {
+  background: var(--ink-900);
+  border-right: 1px solid var(--hairline);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 4rem;
+}
+
+@media (max-width: 860px) {
+  .AuthForm_brandSide__msiof {
+    border-right: none;
+    border-bottom: 1px solid var(--hairline);
+    padding: 3rem 2rem;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.AuthForm_brandTitle__hpDvy {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.AuthForm_brandSub__aK5Qq {
+  font-size: 0.95rem;
+  color: var(--cream-dim);
+  line-height: 1.6;
+  max-width: 26rem;
+  margin: 0;
+}
+
+.AuthForm_formSide__7ES46 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+  max-width: 26rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 860px) {
+  .AuthForm_formSide__7ES46 {
+    padding: 3rem 2rem;
+  }
+}
+
+.AuthForm_formTitle__fBRG9 {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin: 0 0 0.35rem;
+}
+
+.AuthForm_formSub__taDjL {
+  color: var(--slate);
+  margin: 0 0 1.75rem;
+  font-size: 0.9rem;
+}
+
+.AuthForm_field__Ov8LN {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--cream-dim);
+  margin-bottom: 1.1rem;
+}
+
+.AuthForm_field__Ov8LN input {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 4px;
+  padding: 0.7rem 0.8rem;
+  color: var(--cream);
+  font-size: 0.95rem;
+  font-family: var(--font-body);
+}
+
+.AuthForm_field__Ov8LN input:focus {
+  border-color: var(--brass);
+}
+
+.AuthForm_errorBox__MwJmz {
+  background: rgba(192, 106, 92, 0.12);
+  border: 1px solid var(--bad);
+  color: var(--bad);
+  border-radius: 4px;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.85rem;
+  margin-bottom: 1.1rem;
+}
+
+.AuthForm_submit__WtRCz {
+  background: var(--brass);
+  color: var(--ink-950);
+  border: none;
+  border-radius: 4px;
+  padding: 0.8rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  margin-top: 0.35rem;
+}
+
+.AuthForm_submit__WtRCz:hover:not(:disabled) {
+  background: var(--brass-bright);
+}
+
+.AuthForm_submit__WtRCz:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.AuthForm_switchLine__qHPwJ {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--slate);
+  text-align: center;
+}
+
+.AuthForm_switchLine__qHPwJ a {
+  color: var(--brass-bright);
+  text-decoration: none;
+}
+
+.AuthForm_switchLine__qHPwJ a:hover {
+  text-decoration: underline;
+}
+
+.AuthForm_roleGroup__1_bDd {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.AuthForm_roleOption__jIdrT {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--cream);
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.AuthForm_roleOption__jIdrT input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  accent-color: var(--brass);
+  cursor: pointer;
+}
+
+.AuthForm_roleLabel__YoZuL {
+  color: var(--cream);
+}
+

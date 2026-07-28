@@ -1,0 +1,175 @@
+.panel {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 860px) {
+  .panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+.brandSide {
+  background: var(--ink-900);
+  border-right: 1px solid var(--hairline);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 4rem;
+}
+
+@media (max-width: 860px) {
+  .brandSide {
+    border-right: none;
+    border-bottom: 1px solid var(--hairline);
+    padding: 3rem 2rem;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.brandTitle {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.brandSub {
+  font-size: 0.95rem;
+  color: var(--cream-dim);
+  line-height: 1.6;
+  max-width: 26rem;
+  margin: 0;
+}
+
+.formSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+  max-width: 26rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 860px) {
+  .formSide {
+    padding: 3rem 2rem;
+  }
+}
+
+.formTitle {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin: 0 0 0.35rem;
+}
+
+.formSub {
+  color: var(--slate);
+  margin: 0 0 1.75rem;
+  font-size: 0.9rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--cream-dim);
+  margin-bottom: 1.1rem;
+}
+
+.field input {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 4px;
+  padding: 0.7rem 0.8rem;
+  color: var(--cream);
+  font-size: 0.95rem;
+  font-family: var(--font-body);
+}
+
+.field input:focus {
+  border-color: var(--brass);
+}
+
+.errorBox {
+  background: rgba(192, 106, 92, 0.12);
+  border: 1px solid var(--bad);
+  color: var(--bad);
+  border-radius: 4px;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.85rem;
+  margin-bottom: 1.1rem;
+}
+
+.submit {
+  background: var(--brass);
+  color: var(--ink-950);
+  border: none;
+  border-radius: 4px;
+  padding: 0.8rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  margin-top: 0.35rem;
+}
+
+.submit:hover:not(:disabled) {
+  background: var(--brass-bright);
+}
+
+.submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.switchLine {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--slate);
+  text-align: center;
+}
+
+.switchLine a {
+  color: var(--brass-bright);
+  text-decoration: none;
+}
+
+.switchLine a:hover {
+  text-decoration: underline;
+}
+
+.roleGroup {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.roleOption {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--cream);
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.roleOption input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  accent-color: var(--brass);
+  cursor: pointer;
+}
+
+.roleLabel {
+  color: var(--cream);
+}
