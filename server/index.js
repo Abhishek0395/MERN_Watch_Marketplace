@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+require('dotenv').config();
 const cors = require('cors');
 const authRoutes = require('./routeHandler/authHandler');
 const watchRoutes = require('./routeHandler/watchHandler');
@@ -10,7 +11,7 @@ const sellerRoutes = require('./routeHandler/sellerHandler');
 const simpleRoutes = require('./routeHandler/simpleHandler');
 
 mongoose
-    .connect('mongodb://localhost:27017/user')
+    .connect(process.env.MONGODB_URI)
     .then(() => console.log('Connected to MongoDB'))
     .catch((err) => console.error('Could not connect to MongoDB', err));
 const app = express();
